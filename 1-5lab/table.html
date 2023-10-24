@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="laba1.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+    <table>
+        <caption><span class="table-title">Информация о студентах</span></caption>
+        <tr>
+            <th>ID</th>
+            <th>ФИО студента</th>
+            <th>Номер зачётной книжки</th>
+            <th>Номер группы</th>
+            <th>Пол</th>
+            <th>Возраст</th>
+            <th>Форма поступления</th>
+            <th>Название направления</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>123456</td>
+            <td>Группа A</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Куненков Иван Романович</td>
+            <td>434283</td>
+            <td>Группа A</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>Информатика</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Семыкин Степан Романович</td>
+            <td>852402</td>
+            <td>Группа A</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очно-заочная</td>
+            <td>Кибернетика</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Прибылов Александр Олегович</td>
+            <td>682042</td>
+            <td>Группа Б</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Заочная</td>
+            <td>Машиностроение</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Маясов Данила Владимирович</td>
+            <td>936580</td>
+            <td>Спец группа</td>
+            <td>Мужской</td>
+            <td>30</td>
+            <td>Очная</td>
+            <td>Строение двигателей</td>
+        </tr>
+    </table>
+    <form id="student-form">
+        <div class="label-input">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+        </div>
+
+        <div class="label-input">
+            <label for="fullName">ФИО студента:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+
+        <div class="label-input">
+            <label for="studentID">Номер зачётной книжки:</label>
+            <input type="text" id="studentID" name="studentID" required>
+        </div>
+
+        <div class="label-input">
+            <label for="studentGroup">Номер группы:</label>
+            <input type="text" id="studentGroup" name="studentGroup" required>
+        </div>
+
+        <div class="label-input">
+            <label for="studentGender">Пол:</label>
+            <input type="text" id="studentGender" name="studentGender" required>
+        </div>
+
+        <div class="label-input">
+            <label for="studentAge">Возраст:</label>
+            <input type="text" id="studentAge" name="studentAge" required>
+        </div>
+
+        <div class="label-input">
+            <label for="studentForm">Форма поступления:</label>
+            <input type="text" id="studentForm" name="studentForm" required>
+        </div>
+
+        <div class="label-input">
+            <label for="studentDirection">Название направления:</label>
+            <input type="text" id="studentDirection" name="studentDirection" required>
+        </div>
+
+        <div class="label-input">
+            <button type="submit">Добавить</button>
+        </div>
+    </form>
+    <script>
+        document.getElementById("student-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var id = document.getElementById("id").value;
+            var fullName = document.getElementById("fullName").value;
+            var studentID = document.getElementById("studentID").value;
+            var studentGroup = document.getElementById("studentGroup").value;
+            var studentGender = document.getElementById("studentGender").value;
+            var studentAge = document.getElementById("studentAge").value;
+            var studentForm = document.getElementById("studentForm").value;
+            var studentDirection = document.getElementById("studentDirection").value;
+
+            var table = document.querySelector("table");
+            var newRow = table.insertRow(-1); // -1 добавляет строку в конец таблицы
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+            var cell5 = newRow.insertCell(4);
+            var cell6 = newRow.insertCell(5);
+            var cell7 = newRow.insertCell(6);
+            var cell8 = newRow.insertCell(7);
+
+            cell1.innerHTML = id;
+            cell2.innerHTML = fullName;
+            cell3.innerHTML = studentID;
+            cell4.innerHTML = studentGroup;
+            cell5.innerHTML = studentGender;
+            cell6.innerHTML = studentAge;
+            cell7.innerHTML = studentForm;
+            cell8.innerHTML = studentDirection;
+
+            document.getElementById("id").value = "";
+            document.getElementById("fullName").value = "";
+            document.getElementById("studentID").value = "";
+            document.getElementById("studentGroup").value = "";
+            document.getElementById("studentGender").value = "";
+            document.getElementById("studentAge").value = "";
+            document.getElementById("studentForm").value = "";
+            document.getElementById("studentDirection").value = "";
+        });
+    </script>
+</body>
+
+</html>

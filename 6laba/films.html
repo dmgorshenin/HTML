@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список фильмов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_6.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="info.html">Энн Хэтуэй</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Информация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Фильмы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Энн Хэтуэй</h1>
+                <p>Дата рождения: 12 ноября 1982 г.</p>
+                <p>Возраст: 41</p>
+                <p>Снялась в 49 фильмах</p>
+                <p>Жанры: Драма, комедия, мюзикл</p>
+                <p class="d-none d-md-block"> Дополнительная информация: В июле 2006 года Хэтэуэй провела неделю в
+                    Никарагуа, помогая
+                    вакцинировать
+                    детей от гепатита А. Она также побывала в других странах, чтобы следить за соблюдением прав
+                    женщин и девочек, включая Кению и Эфиопию.
+
+                    В 2008 году она была удостоена награды Elle's Women in Hollywood за свою благотворительную
+                    деятельность.
+
+                    В 2010 году Хэтэуэй объявила о сотрудничестве со Всемирным банком в рамках двухлетней программы
+                    развития «The Girl Effect», миссия которой заключается в расширении прав и возможностей девочек в
+                    развивающихся и развитых странах, где треть молодых женщин не работают и не учатся.
+
+                    В 2022 году после российского вторжения поддержала Украину и сделала пожертвования в фонды «Красного
+                    Креста Украины», UNICEF и Save the Children.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="actoravatar.jpg" class="img-fluid" alt="Фотография актера">
+            </div>
+        </div>
+
+        <h2 class="mt-4">Лучшие фильмы</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_1.webp" class="card-img-top" alt="Постер фильма 1">
+                    <div class="card-body">
+                        <h5 class="card-title">"Как стать принцессой"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_2.webp" class="card-img-top" alt="Постер фильма 2">
+                    <div class="card-body">
+                        <h5 class="card-title">"Заколдованная Элла"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_3.webp" class="card-img-top" alt="Постер фильма 3">
+                    <div class="card-body">
+                        <h5 class="card-title">"Дьявол носит Prada"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_4.webp" class="card-img-top" alt="Постер фильма 4">
+                    <div class="card-body">
+                        <h5 class="card-title">"Джейн Остин"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_5.webp" class="card-img-top" alt="Постер фильма 5">
+                    <div class="card-body">
+                        <h5 class="card-title">"Рэйчел выходит замуж"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_6.webp" class="card-img-top" alt="Постер фильма 6">
+                    <div class="card-body">
+                        <h5 class="card-title">"Один день"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_7.webp" class="card-img-top" alt="Постер фильма 7">
+                    <div class="card-body">
+                        <h5 class="card-title">"Любовь и другие лекарства"</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="poster_8.webp" class="card-img-top" alt="Постер фильма 8">
+                    <div class="card-body">
+                        <h5 class="card-title">"Отверженные"</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="mt-4">Фильмография</h2>
+        <table class="table table-striped table-bordered" id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Русское название</th>
+                    <th>Оригинальное название</th>
+                    <th>Роль</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                appendDataToTable(data);
+            })
+            .catch(error => console.error('Ошибка загрузки данных:', error));
+
+        function appendDataToTable(data) {
+            const table = document.getElementById('dataTable');
+            const tbody = table.querySelector('tbody');
+
+            data.forEach(row => {
+                const newRow = tbody.insertRow();
+                Object.values(row).forEach(value => {
+                    const newCell = newRow.insertCell();
+                    newCell.textContent = value;
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
